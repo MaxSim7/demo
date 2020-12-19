@@ -1,0 +1,14 @@
+application:
+  swaggerApi: ${SWAGGER_API_ACCESS:true}
+
+server:
+  port: ${SERVER_PORT:8080}
+
+logging:
+  level:
+    com.example.demo: debug
+
+# Spring Boot configuration
+spring:
+  profiles:
+    active: development
