@@ -10,13 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Api("Main rest controller")
 public class MainController {
 
-    @GetMapping("/greeting")
     @ApiOperation(
             value = "Имя пользователя",
             notes = "Приветсвие")
+    @GetMapping("/greeting")
     public String registry(String userName)  {
 
         return "hello " + userName;
     }
-
 }
